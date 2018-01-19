@@ -39,6 +39,9 @@
         'addCard',
         'chooseCard',
         'openCard'
+      ],
+      NETWORK:[
+        'getNetworkType'
       ]
     }
   });
