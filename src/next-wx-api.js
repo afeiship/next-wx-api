@@ -8,22 +8,38 @@
     statics: {
       debug: ['checkJsApi'],
       share: [
-        'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone'
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage',
+        'onMenuShareQQ',
+        'onMenuShareWeibo',
+        'onMenuShareQZone'
       ],
       pay: ['chooseWXPay'],
       address: ['openAddress'],
       image: [
-        'uploadImage', 'downloadImage', 'chooseImage', 'previewImage'
+        'uploadImage',
+        'downloadImage',
+        'chooseImage',
+        'previewImage'
       ],
       location: [
-        'getLocation', 'openLocation'
+        'getLocation',
+        'openLocation'
       ],
       menu: [
-        'hideOptionMenu', 'showOptionMenu', 'showMenuItems', 'hideAllNonBaseMenuItem', 'showAllNonBaseMenuItem'
+        'hideOptionMenu',
+        'showOptionMenu',
+        'showMenuItems',
+        'hideAllNonBaseMenuItem',
+        'showAllNonBaseMenuItem'
       ],
       window: ['closeWindow'],
       qrCode: ['scanQRCode'],
-      card: ['addCard', 'chooseCard', 'openCard']
+      card: [
+        'addCard',
+        'chooseCard',
+        'openCard'
+      ]
     }
   });
 
