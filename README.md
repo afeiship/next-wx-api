@@ -4,5 +4,21 @@
 
 ## usage:
 ```js
-import {share,debug,} from 'next-wx-api';
+import {
+  SHARE,
+  DEBUG,
+  PAY,
+  ADDRESS,
+  IMAGES,
+  LOCATION,
+  MENU,
+  WINDOW,
+  QR_CODE,
+  CARD
+} from 'next-wx-api';
+import 'next-concat';
+
+//My API LIST:
+const jsApiList = nx.concat([], DEBUG, SHARE, PAY );
+
 ```
