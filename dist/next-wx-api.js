@@ -6,36 +6,36 @@
 
   var NxWxApi = nx.declare('nx.WxApi', {
     statics: {
-      debug: ['checkJsApi'],
-      share: [
+      DEBUG: ['checkJsApi'],
+      SHARE: [
         'onMenuShareTimeline',
         'onMenuShareAppMessage',
         'onMenuShareQQ',
         'onMenuShareWeibo',
         'onMenuShareQZone'
       ],
-      pay: ['chooseWXPay'],
-      address: ['openAddress'],
-      image: [
+      PAY: ['chooseWXPay'],
+      ADDRESS: ['openAddress'],
+      IMAGE: [
         'uploadImage',
         'downloadImage',
         'chooseImage',
         'previewImage'
       ],
-      location: [
+      LOCATION: [
         'getLocation',
         'openLocation'
       ],
-      menu: [
+      MENU: [
         'hideOptionMenu',
         'showOptionMenu',
         'showMenuItems',
         'hideAllNonBaseMenuItem',
         'showAllNonBaseMenuItem'
       ],
-      window: ['closeWindow'],
-      qrCode: ['scanQRCode'],
-      card: [
+      WINDOW: ['closeWindow'],
+      QR_CODE: ['scanQRCode'],
+      CARD: [
         'addCard',
         'chooseCard',
         'openCard'

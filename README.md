@@ -2,7 +2,7 @@
 > Wx api js api const.
 
 
-## resources:
-
-## todos:
-- [ ] unit test case
+## usage:
+```js
+import {share,debug,} from 'next-wx-api';
+```
