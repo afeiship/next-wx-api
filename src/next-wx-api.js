@@ -1,8 +1,7 @@
-(function () {
-
-  var global = global || this || self || window;
+(function() {
+  var global = global || this || window || Function('return this')();
   var nx = global.nx || require('next-js-core2');
-  var wx = global.wx = global.wx;
+  var wx = (global.wx = global.wx);
 
   var NxWxApi = nx.declare('nx.WxApi', {
     statics: {
@@ -16,16 +15,8 @@
       ],
       PAY: ['chooseWXPay'],
       ADDRESS: ['openAddress'],
-      IMAGE: [
-        'uploadImage',
-        'downloadImage',
-        'chooseImage',
-        'previewImage'
-      ],
-      LOCATION: [
-        'getLocation',
-        'openLocation'
-      ],
+      IMAGE: ['uploadImage', 'downloadImage', 'chooseImage', 'previewImage'],
+      LOCATION: ['getLocation', 'openLocation'],
       MENU: [
         'hideOptionMenu',
         'showOptionMenu',
@@ -35,19 +26,12 @@
       ],
       WINDOW: ['closeWindow'],
       QR_CODE: ['scanQRCode'],
-      CARD: [
-        'addCard',
-        'chooseCard',
-        'openCard'
-      ],
-      NETWORK:[
-        'getNetworkType'
-      ]
+      CARD: ['addCard', 'chooseCard', 'openCard'],
+      NETWORK: ['getNetworkType']
     }
   });
 
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = NxWxApi;
   }
-
-}());
+})();
